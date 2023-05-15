@@ -30,10 +30,10 @@ BALL_SPEED = 3
 score_a = 0
 score_b = 0
 
-mixer.music.load('sounds/TrepadaEmCuiaba.mp3')
+mixer.music.load('sounds/som_musica_fundo.mp3')
 mixer.music.set_volume(0.4)
-collision_souds = mixer.Sound("sounds/rojao-super-estourado.mp3")
-point_sound = mixer.Sound("sounds/owwn-ze-da-manga.mp3")
+collision_souds = mixer.Sound("sounds/som_colisao.mp3")
+point_sound = mixer.Sound("sounds/som_ponto.mp3")
 
 mixer.music.play(-1)
 
