@@ -2,7 +2,7 @@
 
 Bem-vindo ao README do jogo PONG em Python! Este documento fornece uma visão geral do jogo PONG, descreve as funcionalidades e explica como executar o código.
 
-![PONG Game](pong_screenshot.png)
+<img src="photos/pong.png">
 
 ## Visão Geral
 O PONG é um jogo clássico de arcade que simula um jogo de tênis de mesa. Dois jogadores controlam as paletas no lado esquerdo e direito da tela, e seu objetivo é rebater a bola para o lado oposto, marcando pontos quando o oponente não consegue rebatê-la.
@@ -41,6 +41,10 @@ Você pode personalizar várias configurações do jogo no arquivo `pong.py`. Aq
 - `MAX_SCORE`: define a pontuação máxima para encerrar o jogo.
 
 Sinta-se à vontade para explorar o código e fazer ajustes de acordo com suas preferências.
+
+### Observações:
+O jogo possui som, porém estão desabilitados, para habilitar deve-se alterar os valores 'mixer.Sound' e 'mixer.music'
+nas linhas 40 a 42, no arquivo pong.py.
 
 ## Recursos Adicionais
 - [Documentação do Pygame](https://www.pygame.org/docs/): Aprenda mais sobre a biblioteca Pygame.

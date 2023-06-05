@@ -31,12 +31,13 @@ score_a = 0
 score_b = 0
 total_score = 0
 var_score = 0
+max_score = 10
 
 mixer.music.load('sounds/som_musica_fundo.mp3')
-mixer.music.set_volume(0)
 collision_souds = mixer.Sound("sounds/som_colisao.mp3")
 point_sound = mixer.Sound("sounds/som_ponto.mp3")
 
+mixer.music.set_volume(0)
 mixer.Sound.set_volume(collision_souds,0)
 mixer.Sound.set_volume(point_sound,0)
 
@@ -244,9 +245,9 @@ def game_loop():
             ball_dx += ball_dx / 10
             var_score +=1
 
-        if (score_a >=10):
+        if (score_a >= max_score):
             end_game("A")
-        elif (score_b >=10):
+        elif (score_b >= max_score):
             end_game("B")
 
 def end_game(winner):
